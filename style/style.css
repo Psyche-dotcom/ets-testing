@@ -324,7 +324,7 @@ label {
   border-top: 3px solid #813b0d;
   -webkit-box-shadow: 0 0 10px 0 rgba(53, 14, 14, 0.06);
           box-shadow: 0 0 10px 0 rgba(53, 14, 14, 0.06);
-  padding: 4rem;
+  padding: 2rem;
 }
 
 @media (min-width: 960px) {
