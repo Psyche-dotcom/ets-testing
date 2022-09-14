@@ -15,7 +15,7 @@ var minusSign = document.getElementById("minus");
 var plusSign = document.getElementById("plusSign");
 
 window.onscroll = function () {
-  if (window.pageYOffset >= 90) {
+  if (window.pageYOffset >= 100) {
     menuitem.classList.add("sticky-animation");
     brownLogo.style.display = "none";
     activeMenu.style.color = "#813b0d";

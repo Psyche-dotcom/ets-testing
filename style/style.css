@@ -13,7 +13,7 @@ li {
 /*Primary color*/
 h2 {
   color: #1e120b;
-  font-size: clamp(1rem, 3.5vw, 1.2rem);
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
   line-height: 2rem;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
@@ -21,10 +21,10 @@ h2 {
   margin-bottom: 2.5rem;
 }
 
-@media (min-width: 960px) {
-  h2 {
-    font-size: clamp(1.4rem, 3.5vw, 2rem);
-  }
+h5 {
+  color: #813b0d;
+  font-size: clamp(1rem, 3.5vw, 1.5rem);
+  margin-bottom: 1rem;
 }
 
 .EmailBooking h3 {
@@ -66,7 +66,7 @@ a {
 @media (min-width: 1150px) {
   .Container {
     width: 90%;
-    max-width: 1600px;
+    max-width: 1400px;
   }
 }
 
@@ -406,11 +406,22 @@ label {
   background-color: #1e120b;
   width: 100%;
   height: 100%;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .BreadCrumb div {
   position: relative;
+}
+
+.BreadCrumb h2 {
+  font-size: clamp(1.4rem, 3.5vw, 4.5rem);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 960px) {
+  .BreadCrumb h2 {
+    margin-bottom: 2rem;
+  }
 }
 
 .BreadCrumb h2,
@@ -536,7 +547,6 @@ label {
 
 .Serviceheader h5 {
   text-align: center;
-  font-size: 1.2rem;
   color: #813b0d;
   font-weight: 600;
 }
@@ -601,6 +611,10 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
+}
+
+.serviceCard .serviceCardInfo p {
+  line-height: 24px;
 }
 
 .serviceCard h5 {
@@ -777,5 +791,402 @@ label {
   background-color: transparent;
   border: 1px solid #1e120b;
   color: #1e120b;
+}
+
+.IndexPage button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 90px;
+  cursor: pointer;
+  border: none;
+  background-color: #813b0d;
+  color: white;
+  font-weight: 600;
+  -webkit-box-shadow: 0 0 20px 0 rgba(53, 14, 14, 0.06);
+          box-shadow: 0 0 20px 0 rgba(53, 14, 14, 0.06);
+}
+
+.IndexPage button:hover {
+  background-color: white;
+  color: #813b0d;
+  border: 1px solid #813b0d;
+}
+
+@media (min-width: 960px) {
+  .IndexPage button {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 1150px) {
+  .IndexPage button {
+    padding: 1.2rem 2.5rem;
+  }
+}
+
+.HeroBG {
+  background-color: #fdf2ea54;
+}
+
+.flexHeroMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 1150px) {
+  .flexHeroMain {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.heroInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+@media (max-width: 560px) {
+  .heroInfo {
+    gap: 2rem;
+  }
+}
+
+.heroInfo .h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+@media (max-width: 560px) {
+  .heroInfo .h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .heroInfo .h1 {
+    font-size: 4rem;
+    line-height: 80px;
+  }
+}
+
+@media (min-width: 1210px) {
+  .heroInfo .h1 {
+    font-size: 4.5rem;
+    line-height: 104px;
+  }
+}
+
+.heroInfo h6 {
+  font-weight: 400;
+  font-size: 0.7rem;
+  line-height: 25px;
+  color: #813b0d;
+}
+
+@media (min-width: 960px) {
+  .heroInfo h6 {
+    font-size: 1rem;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 560px) {
+  .heroInfo h6 {
+    font-size: 0.5rem;
+  }
+}
+
+.heroInfo span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #813b0d;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1150px) {
+  .heroInfo span {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.heroInfo span img {
+  width: 85%;
+}
+
+.heroInfo span #mobile-line {
+  width: 70%;
+}
+
+@media (min-width: 960px) {
+  .heroInfo span #mobile-line {
+    width: 85%;
+  }
+}
+
+@media (max-width: 560px) {
+  .heroInfo span #mobile-line {
+    width: 60%;
+    max-width: 220px;
+  }
+}
+
+.heroInfo .Herobtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 1150px) {
+  .heroInfo .Herobtn {
+    gap: 3rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .heroInfo .Herobtn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.heroInfo #second-btn {
+  background-color: white;
+  color: #813b0d;
+}
+
+.heroInfo #second-btn:hover {
+  background-color: #813b0d;
+  color: white;
+  border: none;
+}
+
+.heroImg {
+  width: 60%;
+}
+
+.heroImg img {
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .heroImg {
+    width: 46%;
+  }
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 1150px) {
+  .desktop {
+    display: block;
+  }
+}
+
+.mainDonkeySpecies {
+  background-color: white;
+}
+
+.HomeAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 960px) {
+  .HomeAbout {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.HomeAbout .HomeAboutusImg {
+  width: 100%;
+}
+
+.HomeAbout .HomeAboutusImg img {
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .HomeAbout .HomeAboutusImg img {
+    min-height: 700px;
+  }
+}
+
+@media (min-width: 960px) {
+  .HomeAbout .HomeAboutusImg {
+    width: 40%;
+  }
+}
+
+.HomeAbout .aboutUsinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 960px) {
+  .HomeAbout .aboutUsinfo {
+    width: 50%;
+    gap: 1.5rem;
+  }
+}
+
+.HomeAbout .aboutUsinfo h2 {
+  text-align: left;
+  color: #1e120b;
+  margin-bottom: 1rem;
+}
+
+.HomeAbout .aboutUsinfo p {
+  color: #1e120b;
+  line-height: 24px;
+}
+
+.partnership img {
+  max-width: 150px;
+}
+
+.partnership .Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.HomepageService {
+  background-color: #fdf2ea54;
+}
+
+.Adoption,
+.Excursions {
+  display: none;
+}
+
+.customer_review {
+  margin: 0 0.7em;
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 2em;
+  gap: 1em;
+}
+
+.card {
+  width: calc(100% / 3);
+  margin: 0 0.5em;
+}
+
+.carousel-control-prev-icon {
+  background-color: #1e120b;
+  border-radius: 50%;
+}
+
+.carousel-control-next-icon {
+  background-color: #1e120b;
+  border-radius: 50%;
+}
+
+.caro_shadow {
+  -webkit-box-shadow: 0 0 20px 0 rgba(53, 14, 14, 0.06);
+          box-shadow: 0 0 20px 0 rgba(53, 14, 14, 0.06);
+}
+
+@media screen and (min-width: 425.1px) and (max-width: 768px) {
+  .card {
+    width: auto;
+    margin: 0 0.5em;
+  }
+  .card:first-child {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 425px) {
+  .cards-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card {
+    width: auto;
+    margin: 0 0.5em;
+  }
+  .card:not(:first-child) {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
